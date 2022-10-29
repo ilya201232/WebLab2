@@ -10,11 +10,11 @@ https://www.figma.com/file/9kTxyB2hthdYsdUANBikJ2/Lab-2-Web
 
 ## Images
 Здесь показаны результаты верстки:
-![alt text](images/img1.png?raw=true)
-![alt text](images/img2.png?raw=true)
-![alt text](images/img3.png?raw=true)
-![alt text](images/img4.png?raw=true)
-![alt text](images/img5.png?raw=true)
-![alt text](images/img6.png?raw=true)
-![alt text](images/img7.png?raw=true)
-![alt text](images/img8.png?raw=true)
+![alt text](Images/img1.png?raw=true)
+![alt text](Images/img2.png?raw=true)
+![alt text](Images/img3.png?raw=true)
+![alt text](Images/img4.png?raw=true)
+![alt text](Images/img5.png?raw=true)
+![alt text](Images/img6.png?raw=true)
+![alt text](Images/img7.png?raw=true)
+![alt text](Images/img8.png?raw=true)
