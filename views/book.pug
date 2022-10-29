@@ -1,0 +1,72 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/book.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Inter')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+
+block scripts
+    script(src='/javascripts/book.js')
+
+block content
+    div(class='content-inner-wrapper')
+        img(class='book-cover-preview' src='/images/books/' + cover_name)
+        form(class='data-part' action='/edit_book_data?id=' + book_id  method="POST")
+            div(class='non-user-data')
+                div(class='param-names')
+                    div(class='param-text') Name:
+                    div(class='param-text') Author:
+                    div(class='param-text') Publish Year:
+                div(class='params')
+                    input(class='param-input' value=book_name name='book_name' required)
+                    input(class='param-input' value=book_author name='book_author' required)
+                    input(class='param-input' type='number' value=book_year name='book_year' required)
+            if is_book_available
+                div(class='user-data')
+                    div(class='data-text') This book is available!
+                    button(class='btn reader-btn' type="button" onclick="openDialog()")
+                        div(class='btn-text') Assign Reader
+            else
+                div(class='user-data')
+                    div(class='data-text') This book is not available!
+                    button(class='btn reader-btn' type="button" onclick="openDialog()")
+                        div(class='btn-text') View Reader
+            div(class='submitting_btns')
+                button(class='btn' name='action' type='submit' value='cancel')
+                    div(class='btn-text') Cancel
+                button(class='btn' name='action' type='submit' value='save')
+                    div(class='btn-text') OK
+    dialog(class='user-data-dialog' id='userDataDialog')
+        form(class='dialog-wrapper' action='/edit_reader_data?id=' + book_id + '&was_available=' + is_book_available  method="POST")
+            if is_book_available
+                div(class='dialog-header-text') New Reader Form
+            else
+                div(class='dialog-header-text') Reader Info
+
+            div(class='user-data-params')
+                div(class='user-data-param-names')
+                    div(class='user-data-param-text') Name:
+                    div(class='user-data-param-text') Return Date:
+
+                if is_book_available
+                    div(class='user-data-params-itself-input-format')
+                        input(class='user-data-param-input' value=reader_name name='reader_name' required)
+                        input(class='user-data-param-input' type='date' value=return_date name='return_date' required)
+                else
+                    div(class='user-data-params-itself-text-format')
+                        div(class='user-data-param-non-edit-text')
+                            div(class='text-wrapper') #{reader_name}
+                        div(class='user-data-param-non-edit-text')
+                            div(class='text-wrapper') #{return_date}
+            div(class='control-btns')
+                if is_book_available
+                    button(class='btn' type="button" onclick="closeDialog()")
+                        div(class='btn-text' ) Cancel
+                    button(class='btn' type="submit")
+                        div(class='btn-text' ) Assign
+                else
+                    button(class='btn' type="submit")
+                        div(class='btn-text' ) Revoke
+                    button(class='btn' type="button" onclick="closeDialog()")
+                        div(class='btn-text' ) OK
+

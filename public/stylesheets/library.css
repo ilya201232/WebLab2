@@ -1,0 +1,486 @@
+.content-inner-wrapper {
+    margin: 39px 70px 0 70px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table-header {
+    font-size: 32px;
+    line-height: 36px;
+
+    padding-left: 5px;
+}
+
+.add-btn {
+    width: 183px;
+    height: 43px;
+
+    cursor: pointer;
+
+    background: #FFFFFF;
+
+    border-radius: 10px;
+    border-color: #05336E;
+}
+
+.add-btn:hover {
+    background: #ececec;
+}
+
+.add-btn:active {
+    background: #d3d3d3;
+}
+
+.add-btn-text {
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #021630;
+}
+
+.second-line {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.filter-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #001126;
+}
+
+
+
+.availability-filter-btn {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+    margin: 0;
+    border: 0;
+
+    border-radius: 20px;
+
+    background: #FFFFFF;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 142px;
+    height: 44px;
+
+    cursor: pointer;
+}
+
+.availability-filter-btn:hover {
+    background: #ececec;
+}
+
+.availability-filter-btn:active {
+    background: #d3d3d3;
+}
+
+#availability-dropdown-content {
+    display: none;
+
+    position: absolute;
+    left: 70px;
+    top: 156px;
+
+    width: 142px;
+
+    flex-direction: column;
+
+    border-radius: 20px;
+    background: #68655B;
+
+    z-index: 1;
+
+}
+
+.visible {
+    display: block !important;
+}
+
+#overdue-dropdown-content {
+    display: none;
+
+    position: absolute;
+    left: 232px;
+    top: 156px;
+
+    width: 167px;
+
+    flex-direction: column;
+
+    border-radius: 20px;
+    background: #68655B;
+
+    z-index: 1;
+}
+
+
+.dropdown-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    width: 100%;
+    height: 54px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+    background: #68655B;
+
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.dropdown-row-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.list_selected_mark {
+    width: 30px;
+    height: 30px;
+
+    display: none;
+}
+
+.dropdown-row:hover .list_selected_mark {
+    display: block;
+}
+
+
+.overdue-filter-btn {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+    margin: 0;
+    border: 0;
+
+    border-radius: 20px;
+
+    background: #FFFFFF;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 167px;
+    height: 44px;
+
+    cursor: pointer;
+}
+
+.overdue-filter-btn:hover {
+    background: #ececec;
+}
+
+.overdue-filter-btn:active {
+    background: #d3d3d3;
+}
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.table > thead {
+    width: 41px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+
+    width: 41px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.head_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* № */
+th:nth-child(1) {
+    width: 20px;
+}
+
+/* Name */
+th:nth-child(2) {
+    width: 399px;
+}
+
+/* Author */
+th:nth-child(3) {
+    width: 380px;
+}
+
+/* Publish Year */
+th:nth-child(4) {
+    width: 144px;
+    text-align:center
+}
+
+/* Available */
+th:nth-child(5) {
+    width: 125px;
+    text-align:center
+}
+
+/* Overdue */
+th:nth-child(6) {
+    width: 123px;
+    text-align:center
+}
+
+/* Кнопки */
+th:nth-child(7) {
+    width: 81px;
+    text-align:center
+}
+
+
+/* Publish Year */
+td:nth-child(4) {
+    text-align:center
+}
+
+/* Available */
+td:nth-child(5) {
+    text-align:center
+}
+
+/* Overdue */
+td:nth-child(6) {
+    text-align:center
+}
+
+/* Кнопки */
+td:nth-child(7) {
+    text-align:center
+}
+
+th {
+    color: #EEEEEE;
+    background-color: #68655B;
+}
+
+tbody tr:nth-child(odd) {
+    background: #D8D6CB;
+}
+
+tbody tr:nth-child(even) {
+    background: #F4F3E7;
+}
+
+tr:hover .table_btns {
+    display: flex;
+}
+
+.table_btns {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.table_btn {
+    width: 21px;
+    height: 21px;
+
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+
+    cursor: pointer;
+}
+
+.eye_btn {
+    margin: 0 10px 0 0;
+}
+
+
+.delete-dialog {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 923px;
+    height: 550px;
+    top: 115px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    padding: 0;
+
+}
+
+.dialog-wrapper {
+    height: 100%;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dialog-header-text {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    padding: 0 134px 0 135px;
+    text-align: center;
+}
+
+.buttons {
+
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 146px;
+}
+
+.new-book-dialog {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 923px;
+    height: 550px;
+    top: 115px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    padding: 0;
+}
+
+.new-book-dialog-wrapper {
+    height: 100%;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.book-data-params {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 66px;
+
+    padding: 0 35px 0 68px;
+}
+
+.book-data-param-names {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.book-data-param-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+
+    text-align: center;
+
+    padding-top: 7px;
+}
+
+.book-data-params-itself {
+    display: flex;
+    flex-direction: column;
+    gap: 27px
+}
+
+.book-data-param-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    background: #FAFAFA;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+
+    color: #001126;
+}
+
+.control-btns {
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    gap: 127px;
+}

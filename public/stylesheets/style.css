@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 63px;
+
+    padding: 0 26px 0 65px;
+
+    background: #E7E7E7;
+    box-shadow: 0 2px 21px rgba(0, 0, 0, 0.25);
+
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-username-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.header-icon {
+    font-size: 48px !important;
+}
+
+.header-text {
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.header-btn {
+    width: 183px;
+    height: 43px;
+
+    cursor: pointer;
+
+    background: #E7E7E7;
+
+    border-radius: 30px;
+    border-color: #05336E;
+}
+
+.header-btn:hover {
+    background: #dadada;
+}
+
+.header-btn:active {
+    background: #cecece;
+}
+
+.header-btn-text {
+    font-family: 'Comfortaa', serif;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #021630;
+}
+
+.btn {
+    width: 163px;
+    height: 61px;
+
+    cursor: pointer;
+
+    background: #FFFFFF;
+
+    border-radius: 10px;
+    border-color: #05336E;
+}
+
+.btn:hover {
+    background: #ececec;
+}
+
+.btn:active {
+    background: #d3d3d3;
+}
+
+.btn-text {
+    font-family: 'Comfortaa', serif;
+
+    font-size: 24px;
+    line-height: 27px;
+
+    color: #021630;
+}

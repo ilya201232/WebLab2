@@ -1,0 +1,132 @@
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+
+    padding-top: 52px;
+}
+
+.background-text {
+
+    width: 511px;
+
+    font-size: 40px;
+    line-height: 45px;
+
+    text-align: center;
+}
+
+.background-img {
+    margin-top: 50px;
+    width: 570px;
+    height: 350px;
+}
+
+.log-in-dialog {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 923px;
+    height: 550px;
+    top: 115px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    padding: 0;
+
+}
+
+.dialog-header-text {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    padding: 28px 0 52px 0;
+    text-align: center;
+}
+
+form {
+    float: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    gap: 65px;
+
+    margin-right: 64px;
+}
+
+.login-part, .password-part {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: right;
+}
+
+.login-part {
+    gap: 88px;
+}
+
+.password-part {
+    gap: 61px;
+}
+
+.form-input {
+
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 10px 0 18px;
+    gap: 10px;
+
+    width: 583px;
+    height: 61px;
+
+    background: #FAFAFA;
+    border-radius: 10px;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 100%;
+
+    color: #001126;
+}
+
+.form-input:focus-visible {
+    outline: none;
+}
+
+.form-label {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.buttons {
+
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 146px;
+}

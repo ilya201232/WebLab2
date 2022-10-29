@@ -1,0 +1,22 @@
+doctype html
+
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+
+        block styles
+
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Comfortaa')
+    body
+        div(class='header')
+            div(class='left-header')
+                span(class="material-symbols-outlined header-icon") library_books
+                div(class='header-text') Online Library
+            div(class='right-header')
+                block right-header-content
+        div(class='content')
+            block content
+
+        block scripts

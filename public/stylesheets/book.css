@@ -1,0 +1,239 @@
+.content-inner-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    gap: 60px;
+
+    margin: 37px 74px 0 42px;
+}
+
+.book-cover-preview {
+    width: 364px;
+    height: 581px;
+
+    object-fit: contain;
+}
+
+.data-part {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin-top: 75px;
+}
+
+.non-user-data {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.param-names {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.param-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+
+    min-width: 185px;
+}
+
+.params {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.param-input {
+
+    padding: 10px;
+    gap: 10px;
+
+    border-radius: 10px;
+    background: #FAFAFA;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #001126;
+}
+
+.user-data {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.data-text {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.reader-btn {
+    border-color: #05336E;
+
+    width: 286px;
+}
+
+.submitting_btns {
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 127px;
+}
+
+.user-data-dialog {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 923px;
+    height: 517px;
+    top: 132px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    padding: 0;
+}
+
+.dialog-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    gap: 71px;
+
+    padding: 28px 0 0 0;
+}
+
+.dialog-header-text {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.user-data-params {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 66px;
+
+    padding: 0 115px 0 187px
+}
+
+.user-data-param-names {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.user-data-param-text {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+
+    text-align: center;
+}
+
+.user-data-params-itself-text-format {
+    flex-grow: 1;
+
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 97px
+}
+
+.user-data-params-itself-input-format {
+    display: flex;
+    flex-direction: column;
+    gap: 65px
+}
+
+.user-data-param-input {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    background: #FAFAFA;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+
+    color: #001126;
+}
+
+.user-data-param-input[type='date'] {
+    text-align: center;
+}
+
+.control-btns {
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    gap: 127px;
+}
+
+.user-data-param-non-edit-text {
+
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.text-wrapper {
+    flex-grow: 1;
+}

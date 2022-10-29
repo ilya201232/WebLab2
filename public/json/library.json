@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Captain's Daughter",
+    "author": "A.S. Pushkin",
+    "release_year": "1836",
+    "in_stock": false,
+    "reader_name": "sdasd",
+    "return_date": "2022-09-08",
+    "cover_file_name": "PushkinCaptainDaughter.webp"
+  },
+  {
+    "name": "His Dark Materials",
+    "author": "Philip Pullman",
+    "release_year": "1836",
+    "in_stock": true,
+    "reader_name": "",
+    "return_date": "",
+    "cover_file_name": "PhilipPullmanHisDarkMaterials.jpg"
+  },
+  {
+    "name": "In Search of Lost Time",
+    "author": "Marcel Proust",
+    "release_year": 1913,
+    "in_stock": true,
+    "reader_name": "",
+    "return_date": "",
+    "cover_file_name": "MarcelProustInSearchOfLostTime.jpeg"
+  },
+  {
+    "name": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "release_year": "1605",
+    "in_stock": false,
+    "reader_name": "PopTopGop",
+    "return_date": "2022-09-30",
+    "cover_file_name": "Title_page_first_edition_Don_Quijote.jpg"
+  },
+  {
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "release_year": 1925,
+    "in_stock": true,
+    "reader_name": "",
+    "return_date": "",
+    "cover_file_name": "The_Great_Gatsby_Cover_1925_Retouched.jpg"
+  },
+  {
+    "name": "Moby Dick",
+    "author": "Herman Melville",
+    "release_year": 1851,
+    "in_stock": true,
+    "reader_name": "",
+    "return_date": "",
+    "cover_file_name": "Moby-Dick_FE_title_page.jpg"
+  }
+]
